@@ -1,0 +1,72 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+    setlocale(0, "");
+
+    int choice;
+
+    cout << "Программа для выбора месяца года\n\n";
+
+    cout << "[1] Январь\n";
+    cout << "[2] Февраль\n";
+    cout << "[3] Март\n";
+    cout << "[4] Апрель\n";
+    cout << "[5] Май\n";
+    cout << "[6] Июнь\n";
+    cout << "[7] Июль\n";
+    cout << "[8] Август\n";
+    cout << "[9] Сентябрь\n";
+    cout << "[10] Октябрь\n";
+    cout << "[11] Ноябрь\n";
+    cout << "[12] Декабрь\n\n";
+    cout << "Выберите необходимый пункт: ";
+
+    cin >> choice;
+    switch (choice) {
+    case 1:
+        cout << "Выбран Январь";
+        break;
+    case 2:
+        cout << "Выбран Февраль";
+        break;
+    case 3:
+        cout << "Выбрань Март";
+        break;
+    case 4:
+        cout << "Выбран Апрель";
+        break;
+    case 5:
+        cout << "Выбран Май";
+        break;
+    case 6:
+        cout << "Выбран Июнь";
+        break;
+    case 7:
+        cout << "Выбран Июль";
+        break;
+    case 8:
+        cout << "Выбран Август";
+        break;
+    case 9:
+        cout << "Выбран Сентябрь";
+        break;
+    case 10:
+        cout << "ВЫбран Октябрь";
+        break;
+    case 11:
+        cout << "Выбран Ноябрь";
+        break;
+    case 12:
+        cout << "Выбран Декабрь";
+        break;
+    default:
+        cout << "Ой,вы выбрали неправилный месяц!";
+        break;
+    }
+
+
+
+    int ; cin >> ;
+    return 0;
+}
