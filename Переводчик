@@ -1,0 +1,170 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+    setlocale(0, "");
+    int choise;
+    cout << " Переводчик\n\n";
+    cout << " [1] Русские слова\n ";
+    cout << "[2] Английские слова\n ";
+    cout << "[3] Выход\n ";
+    cin >> choise;
+    switch (choise)
+    {
+    case 1:
+        cout << "Переводчик 'Список русских слов'\n";
+        cout << "[1] Дорога\n";
+        cout << "[2] Еда\n";
+        cout << "[3] Книга\n";
+        cout << "[4] Сон\n";
+        cout << "[5] Вода\n";
+        cout << "[6] Учёба\n";
+        cout << "[7] Школа\n";
+        cout << "[8] Футболл\n";
+        cout << "[9] Хоккей\n";
+        cout << "[10] Гол\n";
+        cout << "[11] Пас\n";
+        cout << "[12] Гитара\n";
+        cout << "[13] Ведро\n";
+        cout << "[14] Мясо\n";
+        cout << "[15] Яблоко\n";
+        cout << " Выберите номер слова\n ";
+        cin >> choise;
+        switch (choise)
+        {
+        case 1:
+            cout << "Перевод: Дорога => road";
+            break;
+       case 2:
+            cout << "Перевод: Еда => eat";
+            break;
+        case 3:
+            cout << "Перевод: Книга => book";
+            break;
+       case 4:
+            cout << "Перевод: Сон => dream";
+            break;
+        case 5:
+            cout << "Перевод: Вода => water";
+            break;
+        case 6:
+            cout << "Перевод: Учёба=> studies";
+            break;
+        case 7:
+            cout << "Перевод: Школа=> school";
+            break;
+        case 8:
+            cout << "Перевод: Футболл=> football";
+            break;
+        case 9:
+            cout << "Перевод: Хоккей=> hockey";
+            break;
+        case 10:
+            cout << "Перевод: Гол=> goal";
+            break;
+        case 11:
+            cout << "Перевод: Пас=> pass";
+            break;
+        case 12:
+            cout << "Перевод: Гитара=> guitar";
+            break;
+        case 13:
+            cout << "Перевод: Ведро=> bucket";
+            break;
+        case 14:
+            cout << "Перевод: Мясо=> meat";
+            break;
+        case 15:
+            cout << "Перевод: Яблоко=> aple";
+            break;
+        default:
+            cout << "Нет такого слова!";
+        }
+        break;
+    }
+    switch (choise)
+    {
+    case 2:
+        cout << "Переводчик 'Список английских слов'\n";
+        cout << "[1] Road\n";
+        cout << "[2] Eat\n";
+        cout << "[3] Book\n";
+        cout << "[4] Dream\n";
+        cout << "[5] Water\n";
+        cout << "[6] Studies\n";
+        cout << "[7] School\n";
+        cout << "[8] Football\n";
+        cout << "[9] Hockey\n";
+        cout << "[10] Goal\n";
+        cout << "[11] Pass\n";
+        cout << "[12] Guitar\n";
+        cout << "[13] Bucket\n";
+        cout << "[14] Meat\n";
+        cout << "[15] Aple\n";
+        cout << " Выберите номер слова\n ";
+        cin >> choise;
+        switch (choise)
+        {
+        case 1:
+            cout << "Перевод: Road => дорога";
+            break;
+        case 2:
+            cout << "Перевод: Eat => еда";
+            break;
+        case 3:
+            cout << "Перевод: Book => книга";
+            break;
+        case 4:
+            cout << "Перевод: Dream => сон";
+            break;
+        case 5:
+            cout << "Перевод: Water => вода";
+            break;
+        case 6:
+            cout << "Перевод: Studies=> учёба";
+            break;
+        case 7:
+            cout << "Перевод: School=> школа";
+            break;
+        case 8:
+            cout << "Перевод: Football=> футболл";
+            break;
+        case 9:
+            cout << "Перевод: Hockey=> хоккей";
+            break;
+        case 10:
+            cout << "Перевод: Goal=> гол";
+            break;
+        case 11:
+            cout << "Перевод: Pass=> пас";
+            break;
+        case 12:
+            cout << "Перевод: Guitar=> гитара";
+            break;
+        case 13:
+            cout << "Перевод: Bucket=> ведро";
+            break;
+        case 14:
+            cout << "Перевод: Meat=> мясо";
+            break;
+        case 15:
+            cout << "Перевод: Aple=> яблоко";
+            break;
+        default:
+            cout << "Нет такого слова!";
+        }
+        break;
+    default:
+        cout << "Нет такого варианта!";
+    }
+
+    switch (choise)
+    {
+    case 3:
+        cout << "До свидания!";
+        break;
+    }
+    
+    
+    return 0;
+}
