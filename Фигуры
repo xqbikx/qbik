@@ -12,6 +12,8 @@ int main()
     cout << "[4]Прямоугольник\n";
     cout << "[5]Плюс\n";
     cout << "[6]Крестик\n";
+    cout << "[7]Решётка\n";
+    cout << "[8]Выбрать шахматное поле\n";
     cout << "[+]Выберите фигуру!: ";
     cin >> choice;
     switch (choice)
@@ -184,7 +186,7 @@ int main()
         break;
     case 6:
         cout << "Выбран крестик!\n";
-        cout << "[2]Введите размер: ";
+        cout << "[1]Введите размер: ";
         int size12;
         cin >> size12;
         cout << "[2]Выберите стиль: ";
@@ -208,8 +210,53 @@ int main()
         }
             
         break;
+    case 7:
+        cout << "Выбрана решётка!\n";
+        cout << "Введите длину: ";
+        int size13;
+        cin >> size13;
+        cout << "Введите ширину: ";
+        int size14;
+        cin >> size14;
+        cout << "Выберите стиль: ";
+        char stil13;
+        cin >> stil13;
+        for (int a = 0; a < size13; a++) {
+            for (int b = 0; b < size14; b++) {
+                if (b == size13 / 2) {
+                    cout << stil13 << "  ";
+                }
+                else
+                {
+                    cout << "  ";
+                }
+            }
+            cout << "  ";
+            cout << endl;
+        }
+        break;
+    case 8:
+        for (int y = 0; y <= 6; y++)
 
+        {
+
+            for (int x = 0; x <= 6; x++) {
+
+                if ((x + y) % 2 == 0) {
+                    cout << "# ";
+
+                }
+                else cout << " ";
+
+            }
+
+
+
+            cout << endl;
+
+        }
     }
+    
 
     int _; cin >> _;
     return 0;
