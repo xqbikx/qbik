@@ -1,0 +1,105 @@
+#include<iostream>
+using namespace std;
+int getSizeInt() {
+	return sizeof(int);
+}
+int getSizeDouble() {
+	return sizeof(double);
+}
+int getSizeChar() {
+	return sizeof(char);
+}
+int getSizeFloat() {
+	return sizeof(float);
+}
+int getSizeBool() {
+	return sizeof(bool);
+}
+string greeting(string ) {
+	string welcome = "Привет я функция";
+	return welcome;
+}
+int ShowMessage() {
+	int size;
+	size = 5;
+	char still;
+	still = '#';
+	for (int i = 0; i < size; i++)
+	{
+		for (int i = 0; i < size; i++)
+		{
+			cout << still << " ";
+		}
+		cout << endl;
+	}
+	return 0;
+}
+int ShowMessage1() {
+	system("color 2F");
+	return ShowMessage1();
+}
+int ShowMessage2() {
+	system("color 09");
+	return ShowMessage2();
+}
+int main()
+{
+	setlocale(0, "");
+	cout << "[+]Программа-\"Функции\"\n";
+	cout << "[1]Очищение консоли\n";
+	cout << "[2]Изменить цвет фона\n";
+	cout << "[3]Изменение цвета текста консоли\n";
+	cout << "[4]Вывод размера типа данных INT\n";
+	cout << "[5]Вывод размера типа данных CHAR\n";
+	cout << "[6]Вывод размера типа данных DOUBLE\n";
+	cout << "[7]Вывод размера типа данных FLOAT\n";
+	cout << "[8]Вывод размера типа данных BOOL\n";
+	cout << "[9]Вывод сообщения \"Привет я функция\"\n";
+	cout << "[10]Вывод квадрата 5х5\n";
+	cout << "Выберите команду: ";
+	int choise;
+	cin >> choise;
+	switch (choise)
+	{
+	case 1:
+		system("cls");
+		cout << "Успешно очищено!";
+	default:
+		break;
+	case 2:
+		cout << ShowMessage1() << endl;
+		break;
+	case 3:
+		cout << ShowMessage2() << endl;
+		break;
+	case 4:
+		cout << "[+]Размер типа INT: " << getSizeInt() << endl;
+		break;
+	case 5:
+		cout << "[+]Размер типа Char: " << getSizeChar() << endl;
+		break;
+	case 6:
+		cout << "[+]Размер типа Double: " << getSizeDouble() << endl;
+		break;
+	case 7:
+		cout << "[+]Размер типа Float: " << getSizeFloat() << endl;
+		break;
+	case 8:
+		cout << "[+]Размер типа Bool: " << getSizeBool() << endl;
+		break;
+	case 9:
+		cout << "[+]" << greeting("") << "!";
+
+		break;
+	case 10:
+		cout <<ShowMessage() << endl;
+		break;
+
+
+
+	}
+
+
+	int _; cin >> _;
+	return 0;
+}
