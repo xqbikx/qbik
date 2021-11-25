@@ -1,0 +1,446 @@
+#include<iostream>
+#include <windows.h>
+using namespace std;
+int fon;
+int ShowMessage()
+{
+	system("color ");
+	return ShowMessage();
+}
+int ShowMessage1()
+{
+	system("color 20");
+	return ShowMessage();
+}
+int ShowMessage2()
+{
+	system("color 50");
+	return ShowMessage();
+}
+int ShowMessage3()
+{
+	system("color 30");
+	return ShowMessage();
+}
+int main()
+{
+	setlocale(0, "");
+	cout << "[+]Викторина\n";
+	
+	int oshibka;
+	cout << "Количество жизней: ";
+	cin >> oshibka;
+	system("cls");
+	cout << "Осталось жизней " << oshibka << '\n';
+	cout << "Сколько часов в дне?\n";
+	int vopros[]{ 1,2,3,4 };
+	vopros[0] = rand() % 50;
+	vopros[1] = 24;
+	vopros[2] = rand() % 50;
+	vopros[3] = rand() % 50;
+	cout << "[1]" << vopros[0] << '\n';
+	cout << "[2]" << vopros[1] << '\n';
+	cout << "[3]" << vopros[2] << '\n';
+	cout << "[4]" << vopros[3] << '\n';
+	cout << "[5]50/50\n";
+	int otvet;
+	cin >> otvet;
+	int sum = 0;
+	int i;
+	switch (otvet)
+	{
+	case 2:
+	{
+		sum = sum + 1;
+	}
+	break;
+	case 5:
+		system("cls");
+		cout << "Сколько часов в дне?\n";
+		cout << "[1]" << vopros[rand() % 4] << '\n';
+		cout << "[2]" << vopros[1] << '\n';
+		cin >> otvet;
+		if (otvet == 2)
+			sum = sum + 1;
+		else
+		{
+			cout << "Вы проиграли";
+			oshibka = oshibka - 1;
+			if (oshibka == 0) exit(0);
+		}
+		break;
+	default:
+		cout << "Вы проиграли";
+		oshibka = oshibka - 1;
+		if (oshibka == 0) exit(0);
+		break;
+	}
+	system("cls");
+	cout << "Осталось жизней " << oshibka<<'\n';
+	int vopros2[]{ 1,2,3,4 };
+	cout << "Сколько океанов на земле?\n";
+	vopros2[0] = 5;
+	vopros2[1] = 3;
+	vopros2[2] = 4;
+	vopros2[3] = 7;
+	cout << "[1]" << vopros2[0] << '\n';
+	cout << "[2]" << vopros2[1] << '\n';
+	cout << "[3]" << vopros2[2] << '\n';
+	cout << "[4]" << vopros2[3] << '\n';
+	cout << "[5]50/50\n";
+	cin >> otvet;
+	switch (otvet)
+	{
+	case 1: 
+	{
+		sum = sum + 1; 
+	}
+		break;
+	case 5:
+		system("cls");
+		cout << "Сколько океанов на земле?\n";
+		cout << "[1]" << vopros2[rand() % 3+1] << '\n';
+		cout << "[2]" << vopros2[0] << '\n';
+		cin >> otvet;
+		if (otvet == 2)
+			sum = sum + 1;
+		else
+		{
+			cout << "Вы проиграли";
+			oshibka = oshibka - 1;
+			if (oshibka == 0) exit(0);
+		}
+		break;
+	default:
+		cout << "Вы проиграли";
+		oshibka = oshibka - 1;
+		if (oshibka == 0) exit(0);
+		break;
+	}
+	system("cls");
+	cout << "Осталось жизней " << oshibka << '\n';
+	int vopros3[]{ 1,2,3,4 };
+	cout << "В скольки попугаях вышла длина питона?\n";
+	vopros3[0] = 24;
+	vopros3[1] = 32;
+	vopros3[2] = 22;
+	vopros3[3] = 40;
+	cout << "[1]" << vopros3[0] << '\n';
+	cout << "[2]" << vopros3[1] << '\n';
+	cout << "[3]" << vopros3[2] << '\n';
+	cout << "[4]" << vopros3[3] << '\n';
+	cout << "[5]50/50\n";
+	cin >> otvet;
+	switch (otvet)
+	{
+	case 2:
+		sum = sum + 1;
+		break;
+	case 5:
+		system("cls");
+		cout << "В скольки попугаях вышла длина питона?\n";
+		cout << "[1]" << vopros3[1] << '\n';
+		cout << "[2]" << vopros3[rand() % 3+1] << '\n';
+		cin >> otvet;
+		if (otvet == 1)
+			sum = sum + 1;
+		else {
+			cout << "Вы проиграли";
+			oshibka = oshibka - 1;
+			if (oshibka == 0) exit(0);
+		}
+		break;
+	default:
+		cout << "Вы проиграли";
+		oshibka = oshibka - 1;
+		if (oshibka == 0) exit(0);
+		break;
+	}
+	system("cls");
+	cout << "Осталось жизней " << oshibka << '\n';
+	int vopros4[]{ 1,2,3,4 };
+	cout << "Сколько месяцев содержат 28 дней?\n";
+	vopros4[0] = 10;
+	vopros4[1] = 4;
+	vopros4[2] = 1;
+	vopros4[3] = 12;
+	cout << "[1]" << vopros4[0] << '\n';
+	cout << "[2]" << vopros4[1] << '\n';
+	cout << "[3]" << vopros4[2] << '\n';
+	cout << "[4]" << vopros4[3] << '\n';
+	cout << "[5]50/50\n";
+	cin >> otvet;
+	switch (otvet)
+	{
+	case 4:
+		sum = sum + 1;
+		break;
+	case 5:
+		system("cls");
+		cout << "Сколько месяцев содержат 28 дней??\n";
+		cout << "[1]" << vopros4[3] << '\n';
+		cout << "[2]" << vopros4[rand() % 3 + 1] << '\n';
+		cin >> otvet;
+		if (otvet ==1)
+			sum = sum + 1;
+		else
+		{
+			cout << "Вы проиграли";
+			oshibka = oshibka - 1;
+			if (oshibka == 0) exit(0);
+		}
+		break;
+	default:
+		cout << "Вы проиграли";
+		oshibka = oshibka - 1;
+		if (oshibka == 0) exit(0);
+		break;
+	}
+	system("cls");
+	cout << "Осталось жизней " << oshibka << '\n';
+	int vopros5[]{ 1,2,3,4 };
+	cout << "Сколько спутников у марса?\n";
+	vopros5[0] = 5;
+	vopros5[1] = 0;
+	vopros5[2] = 2;
+	vopros5[3] = 1;
+	cout << "[1]" << vopros5[0] << '\n';
+	cout << "[2]" << vopros5[1] << '\n';
+	cout << "[3]" << vopros5[2] << '\n';
+	cout << "[4]" << vopros5[3] << '\n';
+	cout << "[5]50/50\n";
+	cin >> otvet;
+	switch (otvet)
+	{
+	case 3:
+		sum = sum + 1;
+		break;
+	case 5:
+		system("cls");
+		cout << "Сколько спутников у марса?\n";
+		cout << "[1]" << vopros5[rand() % 4] << '\n';
+		cout << "[2]" << vopros5[2] << '\n';
+		cin >> otvet;
+		if (otvet == 2)
+			sum = sum + 1;
+		else
+		{
+			cout << "Вы проиграли";
+			oshibka = oshibka - 1;
+			if (oshibka == 0) exit(0);
+		}
+		break;
+	default:
+		cout << "Вы проиграли";
+		oshibka = oshibka - 1;
+		if (oshibka == 0) exit(0);
+		break;
+	}
+	system("cls");
+	cout << "Осталось жизней " << oshibka << '\n';
+	string vopros6[]{ "","","",""};
+	cout << "Кто спит с открытими глазами?\n";
+	vopros6[0] = "Лошадь";
+	vopros6[1] = "Заяц";
+	vopros6[2] = "Рыба";
+	vopros6[3] = "Воробей";
+	cout << "[1]" << vopros6[0] << '\n';
+	cout << "[2]" << vopros6[1] << '\n';
+	cout << "[3]" << vopros6[2] << '\n';
+	cout << "[4]" << vopros6[3] << '\n';
+	cout << "[5]50/50\n";
+	cin >> otvet;
+	switch (otvet)
+	{
+	case 3:
+		sum = sum + 1;
+		break;
+	case 5:
+		system("cls");
+		cout << "Кто спит с открытими глазами?\n";
+		cout << "[1]" << vopros6[rand() % 4] << '\n';
+		cout << "[2]" << vopros6[2] << '\n';
+		cin >> otvet;
+		if (otvet == 2)
+			sum = sum + 1;
+		else
+		{
+			cout << "Вы проиграли";
+			oshibka = oshibka - 1;
+			if (oshibka == 0) exit(0);
+		}
+		break;
+	default:
+		cout << "Вы проиграли";
+		oshibka = oshibka - 1;
+		if (oshibka == 0) exit(0);
+		break;
+	}
+	system("cls");
+	cout << "Осталось жизней " << oshibka << '\n';
+	string vopros7[]{ "","","","" };
+	cout << "Какие существа жуют желудком?\n";
+	vopros7[0] = "Кошки";
+	vopros7[1] = "Куры";
+	vopros7[2] = "Раки";
+	vopros7[3] = "Псы";
+	cout << "[1]" << vopros7[0] << '\n';
+	cout << "[2]" << vopros7[1] << '\n';
+	cout << "[3]" << vopros7[2] << '\n';
+	cout << "[4]" << vopros7[3] << '\n';
+	cout << "[5]50/50\n";
+	cin >> otvet;
+	switch (otvet)
+	{
+	case 3:
+		sum = sum + 1;
+		break;
+	case 5:
+		system("cls");
+		cout << "Какие существа жуют желудком?\n";
+		cout << "[1]" << vopros7[2] << '\n';
+		cout << "[2]" << vopros7[rand() % 3+1] << '\n';
+		cin >> otvet;
+		if (otvet == 1)
+			sum = sum + 1;
+		else
+		{
+			cout << "Вы проиграли";
+			oshibka = oshibka - 1;
+			if (oshibka == 0) exit(0);
+		}
+		break;
+	default:
+		cout << "Вы проиграли";
+		oshibka = oshibka - 1;
+		if (oshibka == 0) exit(0);
+		break;
+	}
+	system("cls");
+	cout << "Осталось жизней " << oshibka << '\n';
+	string vopros8[]{ "","","","" };
+	cout << "Какие часы показывают правильное время только два раза в сутки?\n";
+	vopros8[0] = "Песочные";
+	vopros8[1] = "Сломанные";
+	vopros8[2] = "Биг Бен";
+	vopros8[3] = "Солнечные";
+	cout << "[1]" << vopros8[0] << '\n';
+	cout << "[2]" << vopros8[1] << '\n';
+	cout << "[3]" << vopros8[2] << '\n';
+	cout << "[4]" << vopros8[3] << '\n';
+	cout << "[5]50/50\n";
+	cin >> otvet;
+	switch (otvet)
+	{
+	case 2:
+		sum = sum + 1;
+		break;
+	case 5:
+		system("cls");
+		cout << "Какие часы показывают правильное время только два раза в сутки?\n";
+		cout << "[1]" << vopros8[1] << '\n';
+		cout << "[2]" << vopros8[rand() % 3 + 1] << '\n';
+		cin >> otvet;
+		if (otvet == 1)
+			sum = sum + 1;
+		else
+		{
+			cout << "Вы проиграли";
+			oshibka = oshibka - 1;
+			if (oshibka == 0) exit(0);
+		}
+		break;
+	default:
+		cout << "Вы проиграли";
+		oshibka = oshibka - 1;
+		if (oshibka == 0) exit(0);
+		break;
+	}
+	system("cls");
+	cout << "Осталось жизней " << oshibka << '\n';
+	string vopros9[]{ "","","","" };
+	cout << "Что теряют космонавты во время полёта?\n";
+	vopros9[0] = "Сознание";
+	vopros9[1] = "Вес";
+	vopros9[2] = "Сон";
+	vopros9[3] = "Память";
+	cout << "[1]" << vopros9[0] << '\n';
+	cout << "[2]" << vopros9[1] << '\n';
+	cout << "[3]" << vopros9[2] << '\n';
+	cout << "[4]" << vopros9[3] << '\n';
+	cout << "[5]50/50\n";
+	cin >> otvet;
+	switch (otvet)
+	{
+	case 2:
+		sum = sum + 1;
+		break;
+	case 5:
+		system("cls");
+		cout << "Что теряют космонавты во время полёта?\n";
+		cout << "[1]" << vopros9[rand() % 3 + 1] << '\n';
+		cout << "[2]" << vopros9[1] << '\n';
+		cin >> otvet;
+		if (otvet == 2)
+			sum = sum + 1;
+		else
+		{
+			cout << "Вы проиграли";
+			oshibka = oshibka - 1;
+			if (oshibka == 0) exit(0);
+		}
+		break;
+	default:
+		cout << "Вы проиграли";
+		oshibka = oshibka - 1;
+		if (oshibka == 0) exit(0);
+		break;
+	}
+	system("cls");
+	cout << "Осталось жизней " << oshibka << '\n';
+	string vopros10[]{ "","","","" };
+	cout << "Желчь образуется в?\n";
+	vopros10[0] = "Печении";
+	vopros10[1] = "Желчном пузыре";
+	vopros10[2] = "Желудке";
+	vopros10[3] = "Поджелудочной железе";
+	cout << "[1]" << vopros10[0] << '\n';
+	cout << "[2]" << vopros10[1] << '\n';
+	cout << "[3]" << vopros10[2] << '\n';
+	cout << "[4]" << vopros10[3] << '\n';
+	cout << "[5]50/50\n";
+	cin >> otvet;
+	switch (otvet)
+	{
+	case 1:
+		sum = sum + 1;
+		break;
+	case 5:
+		system("cls");
+		cout << "Желчь образуется в?\n";
+		cout << "[1]" << vopros10[rand() % 3 + 1] << '\n';
+		cout << "[2]" << vopros10[0] << '\n';
+		cin >> otvet;
+		if (otvet == 2)
+			sum = sum + 1;
+		else
+		{
+			cout << "Вы проиграли";
+			oshibka = oshibka - 1;
+			if (oshibka == 0) exit(0);
+		}
+		break;
+	default:
+		cout << "Вы проиграли";
+		oshibka = oshibka - 1;
+		if (oshibka == 0) exit(0);
+		break;
+	}
+	system("cls");
+	cout << "Осталось жизней " << oshibka << '\n';
+	cout << "Правильных ответов: " << sum << '\n';
+	cout << "Неверных ответов: " << 10 - sum << '\n';
+	system("pause");
+	return 0;
+	int _; cin >> _;
+}
