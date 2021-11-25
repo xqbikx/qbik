@@ -1,0 +1,110 @@
+#include<iostream>
+using namespace std;
+int main() {
+	setlocale(0, "");
+	int choise;
+	cout << "Выберите переменную\n\n";
+	cout << "[1]int\n";
+	cout << "[2]char\n";
+	cout << "[3]float\n";
+	cout << "[4]double\n";
+	cout << "[5]long\n";
+	cout << "[6]short\n";
+	cout << "[7]string\n";
+	cout << "[8]bool\n";
+	cout << "Введите значение: ";
+	cin >> choise;
+	switch (choise)
+	{
+	case 1:
+	{
+		cout << "Выбран int!\n";
+		int arr[10] = { 0,1,2,3,4,5,6,7,8,9 };
+		for (int i = 0; i < 10; i++)
+		{
+			cout << arr[i] << endl;
+		}
+		break;
+	}
+
+	case 2:
+	{
+		cout << "Выбран char!\n";
+		char b[10] = { 'a','s','d','f','g','h','j','k','l','z' };
+		for (int i = 0; i < 10; i++)
+		{
+			cout << b[i] << endl;
+		}
+		break;
+	}
+	case 3: {
+		cout << "Выбран float!\n";
+		float a[10] = { 12,23,36,47,58,69,70,81,92,126 };
+		for (int i = 0; i < 10; i++)
+		{
+			cout << a[i] << endl;
+		}
+		break;
+	}
+	case 4: {
+		cout << "Выбран double!\n";
+		double c[10] = { 89869,234234,245345,9867,524,588,3567,6867,3576,367 };
+		for (int i = 0; i < 10; i++)
+		{
+			cout << c[i] << endl;
+		}
+		break;
+	}
+	case 5: {
+		cout << "Выбран long!\n";
+		long v[10] = { 45,123,988,565,4534,23412,5423,46534,809,233 };
+		for (int i = 0; i < 10; i++)
+		{
+			cout << v[i] << endl;
+		}
+		break;
+	}
+	case 6: {
+		cout << "Выбран short!\n";
+		short s[10] = { 11,12,13,14,15,16,17,18,19,10 };
+		for (int i = 0; i < 10; i++)
+		{
+			cout << s[i] << endl;
+		}
+		break;
+	}
+	case 7: {
+		cout << "Выбран string!\n";
+		string d[10] = { "root","eat","dog","camel","cat" ,"meat" ,"camel" ,"std" ,"cout" ,"main"};
+		for (int i = 0; i < 10; i++)
+		{
+			cout << d[i] << endl;
+		}
+		break;
+	}
+	case 8: {
+		cout << "Выбран bool!\n";
+		bool f[10] = {true,false,false,false,true,true,true,false,false,true};
+		for (int i = 0; i < 10; i++)
+		{
+			cout << f[i] << endl;
+		}
+		break;
+	}
+	}
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+	int _; cin >> _;
+	return 0;
+}
