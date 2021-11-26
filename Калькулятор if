@@ -1,0 +1,56 @@
+#include <iostream>
+using namespace std;
+int main() {
+    setlocale(0, "");
+    cout << "[-] калькулятор" << endl << endl;
+    cout << "[1]+" << endl << endl;
+    cout << "[2]-" << endl << endl;
+    cout << "[3]" << endl << endl;
+    cout << "[4]/" << endl << endl;
+    cout << "[5]^ " << endl << endl;
+    cout << "[6]n " << endl << endl;
+    cout << "[7]n3 " << endl << endl;
+    cout << "[!] Введите операцию: ";
+    char operation;
+    cin >> operation;
+
+    cout << "[!] Введите первое число: ";
+    float number1;
+    cin >> number1;
+
+    if (operation == 'n')
+    {
+    cout << "[n] Результат: " << sqrt(number1);
+    }
+    else if (operation == 'n3')
+    {
+    cout << "[n3] Результат: " << cbrt(number1);
+    }
+
+    cout << "[!] Введите второе число: ";
+    float number2;
+    cin >> number2;
+
+    if (operation == '+') {
+        cout << "[+] Результат: " << number1 << "+" << number2 << "=" << number1 + number2;
+    }
+    else if (operation=='-')
+    {
+        cout <<"[-] Результат: " << number1 << "-" << number2 << "=" << number1 - number2;
+    }
+    else if (operation == '')
+    {
+        cout << "[] Результат: " << number1 << "" << number2 << "=" << number1 * number2;
+    }
+    else if (operation == '/')
+    {
+        cout << "[/] Результат: " << number1 << "/" << number2 << "=" << number1 / number2;
+    }
+    else if (operation == '^')
+    {
+        cout << "[^] Результат: " << number1 << "^" << number2 << "=" << pow(number1, number2);
+    }
+    
+    int ; cin >> ;
+    return 0;
+}
