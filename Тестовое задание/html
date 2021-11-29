@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>Тестовое задание</title>
+<style>
+body{
+  background:#c0c0c0;
+}
+#wrapper{
+  width: 900px;
+  margin: 0 auto;
+  background:#f2e8c9;
+}
+#header{
+position:relative;
+  height: 40px;
+  background-color: #ffffff;
+   margin-bottom: 5px;
+  border-radius: 5px;
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px;
+}
+img{
+float: left;
+  margin: -40px 0 0 0;}
+h1{
+  margin:0 0 10px 350px;
+  color:#464451;
+}
+.nomer{
+  position:absolute;
+  top:5px;
+  left:680px;
+  font-size: 25px;
+  font-style:italic;
+  font-weight:bold;
+  color:#464451;
+}
+#sidebar{
+  background-color: #ffffff;
+  width: 180px;
+  padding: 10px;
+  float: right;
+  border-radius: 5px;
+  box-shadow: rgba(0,0,0,0.5) 10px 10px 30px;
+} 
+.marcer{
+  float: left;
+  margin: 5px 5px 0 0;
+}
+#content{
+  margin-bottom: 50px;
+  width: 490px;
+  padding: 100px;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px;
+}
+.left{
+  float: left;
+  margin: 30px 7px 7px 7px;
+}
+.right{
+  float: right;
+  margin: 7px 0 7px 7px;
+}
+#footer{
+  height:80px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px;
+}
+.clear{
+  clear: both;
+}
+  .fon{ /* Номер телефона */
+  float:left;
+  margin:20px 0 0 20px;
+}
+.mail{
+  float:left;
+ margin:20px 0 0 60px;
+}
+</style>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="header">
+      <h1>Тестовое задание</h1>
+    </div>
+
+    <div id="sidebar">
+      <h3>Список файлов</h3>
+<h3><a href="https://www.pdflib.com/fileadmin/pdflib/pdf/manuals/PDFlib-9.3.1-tutorial.pdf">Файл</a></h3>
+<h3><a href="https://www.pdflib.com/products/pdflib-family/overview/">Сайт PDFlib</a></h3>
+<h3><a href="file:///C:/Users/qbik/Desktop/Testovoe_zadanie_dlya_stazherov_2_dnya.pdf">Тз</a></h3>
+          <hr width="50" color="#037FFC" size="5">
+    </div>
+
+    <div id="content">
+      <embed src="https://www.pdflib.com/fileadmin/pdflib/pdf/manuals/PDFlib-9.3.1-tutorial.pdf" width="580" height="700" />
+    </div>
+  <div class="clear"></div>
+
+<!--Низ-->
+    <div id="footer">
+      <p class="fon"><strong>Телефон:<br> 89997730885</strong> </p>
+      <p class="mail"><strong>E-mail<br>rustamgayfullin@mail.ru</strong></p>
+    </div>
+  </div>
+</body>
+</html>
